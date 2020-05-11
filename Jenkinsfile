@@ -1,10 +1,10 @@
 node('master')
 {
-   stage('ContinuousDownload-Master') 
+   stage('ContinuousDownload_masteronSajSam') 
    {
        git 'https://github.com/intelliqittrainings/maven.git'
    }
-   stage('ContinuousBuild-Master') 
+   stage('ContinuousBuild-Masteronsajsam') 
    {
        sh label: '', script: 'mvn package'
    }
